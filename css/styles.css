@@ -321,6 +321,17 @@ img {
 .staff-list > .item + .item {
   margin-left: 30px;
 }
+
+/* Clients */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+
 /* Footer */
 .footer {
   background-color: var(--footer-bg-color);
@@ -397,9 +408,17 @@ img {
 }
 .socials .link {
   display: flex;
+  width: 70px;
+  height:70px;
+  border-radius: 50%;
   
 }
-
+.link-icon {
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-white-color);
+  justify-content: center;
+}
 
 
 /* Portfolio */ /* Portfolio */ /* Portfolio */ /* Portfolio */
@@ -462,11 +481,4 @@ img {
 
 .card-content {
   padding: 20px 24px;
-}
-.butiti {
-  width: 44px;
-  height: 44px;
-}
-.button-icon {
-  fill: black;
 }
