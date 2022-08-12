@@ -10,16 +10,16 @@
   --footer-bg-color: #2f303a;
   --button-bg-color: #2196f3;
   --outline-color: #eeeeee;
-  --footer-icon-color: #55565E;
-  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --footer-icon-color: #55565e;
+  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 /* Body */
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   letter-spacing: 0.03em;
 }
 .section-title,
@@ -117,16 +117,15 @@ img {
   border-bottom: 1px solid var(--outline-color);
 }
 
-
 .logo-web {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-text-color);
 }
 
 .logo-studio {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.19;
   color: var(--title-text-color);
@@ -174,8 +173,6 @@ img {
   margin-left: 50px;
 }
 .auth-nav .link {
-  display: flex;
-  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -190,22 +187,6 @@ img {
   color: var(--accent-text-color);
 }
 
-.auth-nav .link::before {
-  content: '';
-  margin-right: 10px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.icon-mail::before {
-  width: 16px;
-  height: 12px;
-  background-image: url(../svg/Mail.svg);
- }
-.icon-tel::before {
-  width: 10px;
-  height: 16px;
-  background-image: url(../svg/smartphone.svg);
-}
 /* hero*/
 
 .hero {
@@ -219,10 +200,7 @@ img {
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/background-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -251,7 +229,7 @@ img {
 }
 
 .feature-list .item::before {
-  display:block;
+  display: block;
   border-radius: 4px;
   content: '';
   background-color: var(--staff-bg-color);
@@ -307,7 +285,6 @@ img {
   margin-left: 30px;
 }
 
-
 /* Staff */
 .staff {
   padding-top: 94px;
@@ -341,7 +318,7 @@ img {
   border-radius: 4px;
   background-color: var(--primary-bg-color);
 }
-.staff-list >.item + .item{
+.staff-list > .item + .item {
   margin-left: 30px;
 }
 /* Footer */
@@ -358,14 +335,14 @@ img {
 }
 
 .logo-footer-web {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-text-color);
 }
 
 .logo-footer-studio {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-size: 26px;
   line-height: 1.19;
   color: var(--primary-white-color);
@@ -399,7 +376,8 @@ img {
 }
 
 .social-links {
-  margin-left: 70px;}
+  margin-left: 70px;
+}
 
 .join {
   margin-top: 0;
@@ -414,43 +392,16 @@ img {
 .social-links .socials {
   display: flex;
 }
-.socials .item +.item {
+.socials .item + .item {
   margin-left: 10px;
-  
-
 }
 .socials .link {
   display: flex;
-  width: 44px;
-  height: 44px;
-  padding: 10px;
-  align-items: stretch;
+  
 }
 
-.socials .item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--footer-icon-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
-.item.logo-inst {
-  background-image: url(../svg/inst.svg);
-}
-.item.logo-twitter {
-  background-image: url(../svg/Twit.svg);
-}
-.item.logo-fb {
-  background-image: url(../svg/Face.svg);
-}
-.item.logo-in {
-  background-image: url(../svg/in.svg);
-}
-.socials .item:hover{
-  background-color: var(--accent-text-color);
-}
+
+
 /* Portfolio */ /* Portfolio */ /* Portfolio */ /* Portfolio */
 .main-section {
   padding-top: 94px;
@@ -475,16 +426,16 @@ img {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  
-  margin: -15px; 
+
+  margin: -15px;
 }
 
 .card-set > .item {
   margin: 15px;
-  
-  width: 370px;  
+
+  width: 370px;
 }
-.item .card-content{
+.item .card-content {
   border-left: 1px solid var(--outline-color);
   border-right: 1px solid var(--outline-color);
   border-bottom: 1px solid var(--outline-color);
@@ -511,4 +462,11 @@ img {
 
 .card-content {
   padding: 20px 24px;
+}
+.butiti {
+  width: 44px;
+  height: 44px;
+}
+.button-icon {
+  fill: black;
 }
