@@ -11,6 +11,7 @@
   --button-bg-color: #2196f3;
   --outline-color: #eeeeee;
   --footer-icon-color: #55565e;
+  --svg-icon-color: #afb1b8;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -327,11 +328,37 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .client-list {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+}
+.client-list .item + .item {
+  margin-left: 30px;
+}
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--svg-icon-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.clients-icon {
+  fill: var(--svg-icon-color);
 }
 
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-text-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon{
+  fill: var(--accent-text-color);
+}
 /* Footer */
 .footer {
   background-color: var(--footer-bg-color);
@@ -408,19 +435,23 @@ img {
 }
 .socials .link {
   display: flex;
-  width: 70px;
-  height:70px;
-  border-radius: 50%;
-  
-}
-.link-icon {
   width: 44px;
   height: 44px;
-  fill: var(--primary-white-color);
+  border-radius: 50%;
   justify-content: center;
+  align-items: center;
+  fill: var(--primary-white-color);
+  background-color: var(--footer-icon-color);
+}
+.icon-item {
+  width: 20px;
+  height: 20px;
 }
 
-
+.socials .link:hover,
+.socials .link:focus {
+  background-color: var(--accent-text-color);
+}
 /* Portfolio */ /* Portfolio */ /* Portfolio */ /* Portfolio */
 .main-section {
   padding-top: 94px;
