@@ -12,12 +12,12 @@
   --outline-color: #eeeeee;
   --footer-icon-color: #55565e;
   --svg-icon-color: #afb1b8;
-  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-    0px 1px 1px rgba(0, 0, 0, 0.14),
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  --card-portfolio-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-    0px 4px 4px rgba(0, 0, 0, 0.06), 
+  --card-portfolio-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  --button-portfolio-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Body */
@@ -188,7 +188,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.icon-nav{
+.icon-nav {
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
@@ -242,7 +242,6 @@ img {
   position: absolute;
 }
 
-
 .feature-list {
   display: flex;
 }
@@ -265,9 +264,8 @@ img {
 .feature .item + .item {
   margin-left: 30px;
 }
-.feature-icons{
+.feature-icons {
   display: flex;
-  
 }
 .feature-icons .items {
   display: flex;
@@ -279,7 +277,7 @@ img {
   justify-content: center;
   background-color: var(--staff-bg-color);
 }
-.feature-icons .items+.items{
+.feature-icons .items + .items {
   margin-left: 30px;
 }
 /* Work list */
@@ -508,7 +506,10 @@ img {
 .button-list .item + .item {
   margin-left: 8px;
 }
-
+.item .button:hover,
+.item .button:focus {
+  box-shadow: var(--button-portfolio-shadow);
+}
 .card-set {
   display: flex;
   flex-wrap: wrap;
